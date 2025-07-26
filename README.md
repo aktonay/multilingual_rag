@@ -1,16 +1,4 @@
-Understood! Below is your **complete and self-contained `README.md` file**, with **every single part included inside**:
 
-* ✅ Project overview
-* ✅ Step-by-step setup
-* ✅ API usage & examples
-* ✅ Sample queries & output
-* ✅ Answers to all required questions
-* ✅ Evaluation matrix
-* ✅ No external notes — everything is INSIDE the file
-
----
-
-```markdown
 # 📚 Multilingual RAG System (Bangla + English) using DeepSeek AI
 
 A simple, robust Retrieval-Augmented Generation (RAG) system that answers **Bangla and English** queries using context retrieved from a Bangla PDF (HSC26 Bangla 1st Paper). Powered by DeepSeek via OpenRouter, FAISS for semantic chunk search, and MongoDB for storing chat history.
