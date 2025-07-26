@@ -337,11 +337,3 @@ This system is now fully configured and production-ready for:
 * Bangla/English QA on textbook content
 * Integration into apps, chatbots, or dashboards
 
-```
-
----
-
-✅ This is a **single-file `README.md`**, ready to copy-paste into your GitHub repo.
-
-Would you like me to export this as a `.md` file for direct upload or zip the full project with this inside?
-```
