@@ -1,0 +1,54 @@
+# Core LangChain dependencies
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# Embedding model for Bangla
+sentence-transformers>=2.2.2
+
+# FAISS for vector similarity search
+faiss-cpu>=1.7.4
+
+# PDF text extraction
+pymupdf>=1.23.0
+
+# FastAPI web server
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+
+# MongoDB drivers
+pymongo>=4.4.0
+
+
+# Utilities
+tqdm
+numpy>=1.24.0
+python-dotenv
+# Core RAG Dependencies
+langchain>=0.1.0
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+transformers>=4.30.0
+
+# PDF Processing
+PyMuPDF>=1.23.0
+fitz>=0.0.1.dev2
+
+# Web Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+
+# Database
+pymongo>=4.4.0
+
+# OpenAI Client (for OpenRouter API)
+openai>=1.0.0
+httpx>=0.24.0
+
+# Utilities
+python-dotenv>=1.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Development
+pytest>=7.4.0
