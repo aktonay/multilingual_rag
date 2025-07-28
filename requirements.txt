@@ -16,7 +16,7 @@ fastapi>=0.100.0
 uvicorn[standard]>=0.22.0
 
 # MongoDB drivers
-pymongo>=4.4.0
+#pymongo>=4.4.0
 
 
 # Utilities
@@ -42,8 +42,8 @@ pydantic>=2.0.0
 pymongo>=4.4.0
 
 # OpenAI Client (for OpenRouter API)
-openai>=1.0.0
-httpx>=0.24.0
+#openai>=1.0.0
+#httpx>=0.24.0
 
 # Utilities
 python-dotenv>=1.0.0

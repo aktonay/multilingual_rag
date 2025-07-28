@@ -31,30 +31,28 @@ class PDFPreprocessor:
         logger.info(f"Extracting text from PDF: {pdf_path}")
         
         try:
-            # Open PDF document
-            doc = fitz.open(str(pdf_path))
-            full_text = []
-            
-            # Extract text from each page
-            for page_num in range(len(doc)):
-                page = doc.load_page(page_num)
-                page_text = page.get_text()
+            # Open PDF document safely with context manager
+            with fitz.open(str(pdf_path)) as doc:
+                full_text = []
                 
-                if page_text.strip():  # Only add non-empty pages
-                    cleaned_text = self._clean_text(page_text)
-                    if cleaned_text:
-                        full_text.append(f"--- Page {page_num + 1} ---\n{cleaned_text}")
-            
-            doc.close()
-            
-            # Combine all pages
-            combined_text = "\n\n".join(full_text)
-            
-            logger.info(f"Successfully extracted text from {len(doc)} pages")
-            logger.info(f"Total text length: {len(combined_text)} characters")
-            
-            return combined_text
-            
+                # Extract text from each page
+                for page_num in range(len(doc)):
+                    page = doc.load_page(page_num)
+                    page_text = page.get_text()
+                    
+                    if page_text.strip():  # Only add non-empty pages
+                        cleaned_text = self._clean_text(page_text)
+                        if cleaned_text:
+                            full_text.append(f"--- Page {page_num + 1} ---\n{cleaned_text}")
+                
+                # Combine all pages
+                combined_text = "\n\n".join(full_text)
+                
+                logger.info(f"Successfully extracted text from {len(doc)} pages")
+                logger.info(f"Total text length: {len(combined_text)} characters")
+                
+                return combined_text
+                
         except Exception as e:
             logger.error(f"Error extracting text from PDF: {e}")
             raise

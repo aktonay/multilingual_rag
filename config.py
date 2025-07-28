@@ -11,6 +11,10 @@ DATA_DIR.mkdir(exist_ok=True)
 VECTOR_DB_DIR.mkdir(exist_ok=True)
 
 class Config:
+    # Add these two so config.DATA_DIR and config.VECTOR_DB_DIR exist
+    DATA_DIR = DATA_DIR
+    VECTOR_DB_DIR = VECTOR_DB_DIR
+
     # PDF Configuration
     PDF_PATH = DATA_DIR / "HSC26-Bangla1st-Paper.pdf"
     
@@ -28,7 +32,7 @@ class Config:
     SITE_NAME = os.getenv("SITE_NAME", "Multilingual RAG System")  # Your site name
     
     # MongoDB Configuration
-    MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+    MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://azon7550:cQgJmA0qUBP3Za9t@clusterrag.jwgt7zn.mongodb.net/?retryWrites=true&w=majority&appName=Clusterrag")
     MONGO_DB_NAME = "multilingual_rag"
     MONGO_COLLECTION = "chat_history"
     

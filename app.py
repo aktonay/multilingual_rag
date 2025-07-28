@@ -336,7 +336,7 @@ async def test_sample_questions():
 
 if __name__ == "__main__":
     import uvicorn
-    
+    from config import DATA_DIR, VECTOR_DB_DIR
     # Ensure directories exist
     config.DATA_DIR.mkdir(exist_ok=True, parents=True)
     config.VECTOR_DB_DIR.mkdir(exist_ok=True, parents=True)
