@@ -5,7 +5,7 @@ langchain-community>=0.0.20
 # Embedding model for Bangla
 sentence-transformers>=2.2.2
 
-# FAISS for vector similarity search
+# FAISS for vector similarity searchh
 faiss-cpu>=1.7.4
 
 # PDF text extraction
