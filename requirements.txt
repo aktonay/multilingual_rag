@@ -1,6 +1,6 @@
 # Core LangChain dependencies
 langchain>=0.1.0
-langchain-community>=0.0.20
+langchain-community>=0.4.2
 
 # Embedding model for Bangla
 sentence-transformers>=2.2.2
