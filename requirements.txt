@@ -27,7 +27,7 @@ python-dotenv
 langchain>=0.1.0
 sentence-transformers>=2.2.2
 faiss-cpu>=1.7.4
-transformers>=4.30.0
+transformers>=5.18.0
 
 # PDF Processing
 PyMuPDF>=1.23.0
