@@ -13,7 +13,7 @@ pymupdf>=1.23.0
 
 # FastAPI web server
 fastapi>=0.100.0
-uvicorn[standard]>=0.22.0
+uvicorn[standard]>=0.54.0
 
 # MongoDB drivers
 #pymongo>=4.4.0
@@ -35,7 +35,7 @@ fitz>=0.0.1.dev2
 
 # Web Framework
 fastapi>=0.100.0
-uvicorn[standard]>=0.22.0
+uvicorn[standard]>=0.54.0
 pydantic>=2.0.0
 
 # Database
