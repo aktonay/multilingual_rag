@@ -22,7 +22,7 @@ uvicorn[standard]>=0.22.0
 # Utilities
 tqdm
 numpy>=1.24.0
-python-dotenv
+python-dotenv>=1.2.4
 # Core RAG Dependencies
 langchain>=0.1.0
 sentence-transformers>=2.2.2
@@ -46,7 +46,7 @@ pymongo>=4.4.0
 #httpx>=0.24.0
 
 # Utilities
-python-dotenv>=1.0.0
+python-dotenv>=1.2.4>=1.0.0
 numpy>=1.24.0
 tqdm>=4.65.0
 
