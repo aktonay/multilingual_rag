@@ -20,7 +20,7 @@ uvicorn[standard]>=0.22.0
 
 
 # Utilities
-tqdm
+tqdm>=4.70.1
 numpy>=1.24.0
 python-dotenv
 # Core RAG Dependencies
@@ -48,7 +48,7 @@ pymongo>=4.4.0
 # Utilities
 python-dotenv>=1.0.0
 numpy>=1.24.0
-tqdm>=4.65.0
+tqdm>=4.70.1>=4.65.0
 
 # Development
 pytest>=7.4.0
