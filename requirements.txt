@@ -6,7 +6,7 @@ langchain-community>=0.0.20
 sentence-transformers>=2.2.2
 
 # FAISS for vector similarity searchh
-faiss-cpu>=1.7.4
+faiss-cpu>=1.15.1
 
 # PDF text extraction
 pymupdf>=1.23.0
@@ -26,7 +26,7 @@ python-dotenv
 # Core RAG Dependencies
 langchain>=0.1.0
 sentence-transformers>=2.2.2
-faiss-cpu>=1.7.4
+faiss-cpu>=1.15.1
 transformers>=4.30.0
 
 # PDF Processing
